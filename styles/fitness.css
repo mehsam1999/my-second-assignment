@@ -257,6 +257,23 @@ main{
     .banner-workout-video p{
         font-size: 0.1rem;
     }
-
+ /* change habit styles */
+    .habit-section{
+        padding: 0 5rem;
+    }
+    .habit-text{
+        padding-top: 1rem;
+    }
+    .habit-text h3{
+        width: 318px;
+        font-size: 2rem;
+    }
+    .habit-text p{
+        width: 316px;
+        font-size: 0.875rem;
+    }
+    .habit-card-container{
+        grid-template-columns: 1fr;
+    }
 
 }
