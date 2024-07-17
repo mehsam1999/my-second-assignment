@@ -10,11 +10,8 @@ body{
 .banner-container{
     position: relative;
     width: 100%;
-    background-image: linear-gradient(180deg, rgba(34, 34, 34, 1), rgba(34, 34, 34, 0.9) 50%, rgba(34, 34, 34, 1) 100%);
-    background-position: center;
-    background-size: cover;
-    margin-bottom: 10rem;
-    
+    background-image: linear-gradient(180.00deg, rgb(17, 17, 17),rgba(119, 119, 119, 0) 900%);
+    margin-bottom: 10rem;   
 }
 .navbar-content{
     display: flex;
@@ -56,9 +53,7 @@ body{
     justify-content: space-between;
     margin: 0 11rem;
 }
-.banner-titles{
-    margin-top: 5rem;
-}
+
 .banner-titles h3{
     width: 520px;
     height: 282px;
@@ -66,6 +61,7 @@ body{
     font-size: 4.8rem;
     font-weight: 900;
     margin-bottom: 1.75rem;
+    margin-top: 3rem;
 }
 #shape{
     font-family: 'Brush Script MT', cursive;
@@ -74,20 +70,30 @@ body{
     line-height: 120%;   
 }
 .banner-titles p{
-    width: 520px;
+    width: 500px;
     color: rgba(255, 255, 255, 0.5);
 }
-
+.btn-banner{
+    display: flex;
+    gap: 0.9rem;
+}
 .btn-primary{
     margin-top: 1.7rem;
     padding: 1rem 2.5rem;
-    margin-right: 0.9rem;
     border-radius: 2.6rem;
     border: 1px solid rgb(230, 83, 60);
     color: white;
     font-size: 1.125rem;
     font-weight: 600;
     background-color: rgb(230, 83, 60);
+}
+.banner-img{
+    width: 349px;
+    height: 580px;
+}
+.banner-img img{
+    width: 100%;
+    height: 100%;
 }
 .banner-video-tutorial{
     display: flex;
@@ -98,8 +104,8 @@ body{
     background: rgba(255, 255, 255, 0.3);
     backdrop-filter: blur(4px);
     gap: 1rem;
-    width: 206px;
-    height: 96px;
+    width: 200px;
+    height: 90px;
     position: absolute;
     top: 78%;
     left: 67%;
@@ -120,5 +126,75 @@ body{
     border: 1px solid rgba(255, 255, 255, 0.1);
     background: rgba(255, 255, 255, 0.3);
     backdrop-filter: blur(4px);
-    padding: 1.25rem;
+    padding: 1rem;
+}
+.hamburger{
+    display: none;
+}
+/* responsive view for mobile devices */
+@media screen and (max-width: 576px) {
+    .navbar{
+        display: none;
+    }
+    .hamburger{
+        display: block;
+    }
+    .hamburger i{
+        font-size: 1.6rem;
+    }
+    .navbar-content{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1.5rem 2rem;
+    }
+    .banner-content{
+        display: flex;
+        flex-direction: column;
+        margin: 0 2rem;   
+    }
+    .banner-titles h3{
+        width: 70%;
+        height: 50%;
+        font-size: 2.25rem;
+        font-weight: 900;
+        margin-bottom: 1.5rem;
+        margin-top: 1.5rem;
+    }
+    .banner-titles p{
+        width: 85%;
+        font-size: 1rem;
+    }
+    .btn-primary{
+        width: 50%;
+        padding: 0.5rem 1.25rem;
+        font-size: 0.9rem;
+        margin-bottom: 3rem;
+    }
+    .banner-img{
+        width: 100%;
+        height: 100%;
+        
+    }
+    .banner-video-tutorial{
+        width: 45%;
+        margin-left: -14rem;
+        margin-top: -6.25rem;
+    }
+    .banner-workout-video{
+        margin-left: -8rem;
+        margin-top: 6rem; 
+        padding: 0.6rem;
+    }
+    .banner-video-tutorial,.banner-workout-video h3{
+        font-size: 1rem;
+    }
+    .banner-video-tutorial p{
+        font-size: 0.5rem;
+    }
+    .banner-workout-video p{
+        font-size: 0.1rem;
+    }
+
+
 }
