@@ -6,12 +6,16 @@ body{
 * {
     margin: 0;
 }
+main{
+    margin: 0 auto;
+    background-color: black;
+}
 /* header styles */
 .banner-container{
     position: relative;
-    width: 100%;
-    background-image: linear-gradient(180.00deg, rgb(17, 17, 17),rgba(119, 119, 119, 0) 900%);
-    margin-bottom: 10rem;   
+    width: 100%;    
+    background-image: linear-gradient(180deg, rgb(17, 17, 17),rgba(119, 119, 119, 0) 800%);
+
 }
 .navbar-content{
     display: flex;
@@ -131,6 +135,64 @@ body{
 .hamburger{
     display: none;
 }
+/* change your habits style */
+.habit-section{
+    padding: 0 10rem;
+}
+.habit-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 6rem;
+}
+.habit-text h3{
+    color: white;
+    font-size: 3rem;
+    font-weight: 900;
+    margin-bottom: 1rem;
+    
+}
+.habit-text p{
+    width: 670px;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 3.5rem;
+}
+.habit-card-container{
+    width: 1044px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2.3rem;
+}
+.habit-card img{
+    border-radius: 50%;
+    margin-bottom: 1.8rem;
+}
+.habit-card{
+    width: 231px;
+    height: 274px;
+    /* border: 1px solid rebeccapurple; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.habit-card h3{
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 0.3rem;
+
+}
+.habit-card p{
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.5);
+}
 /* responsive view for mobile devices */
 @media screen and (max-width: 576px) {
     .navbar{
@@ -166,9 +228,9 @@ body{
         font-size: 1rem;
     }
     .btn-primary{
-        width: 50%;
-        padding: 0.5rem 1.25rem;
-        font-size: 0.9rem;
+        width: 100%;
+        padding: 1rem 1.5rem;
+        font-size: 0.8rem;
         margin-bottom: 3rem;
     }
     .banner-img{
@@ -177,7 +239,7 @@ body{
         
     }
     .banner-video-tutorial{
-        width: 45%;
+        width: 50%;
         margin-left: -14rem;
         margin-top: -6.25rem;
     }
