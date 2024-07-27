@@ -1,10 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url('https://fonts.cdnfonts.com/css/miama');
 
 body{
     font-family: "Inter", sans-serif;
 }
 * {
     margin: 0;
+    
 }
 main{
     margin: 0 auto;
@@ -13,8 +15,9 @@ main{
 /* header styles */
 .banner-container{
     position: relative;
-    width: 100%;    
-    background-image: linear-gradient(180deg, rgb(17, 17, 17),rgba(119, 119, 119, 0) 800%);
+    width: 100%;  
+    background-color: black; 
+    background-image: linear-gradient(180deg, rgb(17, 17, 17),rgba(119, 119, 119, 0) 200%);
 
 }
 .navbar-content{
@@ -59,8 +62,8 @@ main{
 }
 
 .banner-titles h3{
+    position: relative;
     width: 520px;
-    height: 282px;
     color: rgb(255, 255, 255);
     font-size: 4.8rem;
     font-weight: 900;
@@ -68,10 +71,17 @@ main{
     margin-top: 3rem;
 }
 #shape{
-    font-family: 'Brush Script MT', cursive;
-    font-style: italic;
+    position: absolute;
+    font-family: 'Miama', sans-serif;
+    font-size: 8.8rem;
+    bottom: 15%;
+    left: 1%;
     font-weight: 100;
     line-height: 120%;   
+}
+#stay{
+    position: absolute;
+    left: 41%;
 }
 .banner-titles p{
     width: 500px;
@@ -106,8 +116,8 @@ main{
     border-radius: 0.75rem;
     border: 1px solid rgba(255, 255, 255, 0.1);
     background: rgba(255, 255, 255, 0.3);
-    backdrop-filter: blur(4px);
-    gap: 1rem;
+    backdrop-filter: blur(8px);
+    gap: 0.5rem;
     width: 200px;
     height: 90px;
     position: absolute;
@@ -115,11 +125,10 @@ main{
     left: 67%;
     
 }
-.ball{
-    width: 40px;
+.ball img{
+    width: 45px;
     height: 40px;
-    border-radius: 50%;
-    background-color: rgb(230, 83, 60);
+    
 }
 
 .banner-workout-video{
@@ -129,7 +138,7 @@ main{
     border-radius: 0.75rem;
     border: 1px solid rgba(255, 255, 255, 0.1);
     background: rgba(255, 255, 255, 0.3);
-    backdrop-filter: blur(4px);
+    backdrop-filter: blur(8px);
     padding: 1rem;
 }
 .hamburger{
@@ -138,8 +147,9 @@ main{
 /* change your habits style */
 .habit-section{
     padding: 0 10rem;
+    
 }
-.habit-text{
+.text-decoration{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -147,14 +157,14 @@ main{
     text-align: center;
     padding-top: 6rem;
 }
-.habit-text h3{
+.text-decoration h3{
     color: white;
     font-size: 3rem;
     font-weight: 900;
     margin-bottom: 1rem;
     
 }
-.habit-text p{
+.text-decoration p{
     width: 670px;
     color: rgba(255, 255, 255, 0.5);
     font-size: 1rem;
@@ -170,6 +180,7 @@ main{
 }
 .habit-card img{
     border-radius: 50%;
+    border: 3px solid rgba(255, 255, 255, 0.3);
     margin-bottom: 1.8rem;
 }
 .habit-card{
@@ -193,6 +204,43 @@ main{
     font-weight: 400;
     color: rgba(255, 255, 255, 0.5);
 }
+.running-container{
+    width: 1060px;
+    margin: 0 auto;
+    margin-top: 6.25rem;
+    /* border: 2px solid red; */
+    border-radius: 1rem;
+    background-color: rgb(34, 34, 34);
+    padding: 2rem;
+}
+.running-text-button h3{
+    color: white;
+    font-size: 3rem;
+    font-weight: 900;
+    margin-bottom: 1rem;
+}
+.running-card{
+    margin-left: 1rem;
+}
+.running-text-button p{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1rem;
+    font-weight: 400;
+    width: 443px;
+}
+.running-card{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.running-img img{
+    border-radius: 1rem;
+    width: 366px;
+    height: 312px;
+    object-fit: none;
+    object-position: 67% 30%;
+}
+
 /* responsive view for mobile devices */
 @media screen and (max-width: 576px) {
     .navbar{
@@ -223,6 +271,12 @@ main{
         margin-bottom: 1.5rem;
         margin-top: 1.5rem;
     }
+    #shape{
+        font-size: 4.25rem;
+    }
+    #stay{
+        margin-left: 0.7rem;
+    }
     .banner-titles p{
         width: 85%;
         font-size: 1rem;
@@ -231,12 +285,13 @@ main{
         width: 100%;
         padding: 1rem 1.5rem;
         font-size: 0.8rem;
-        margin-bottom: 3rem;
+        
     }
     .banner-img{
         width: 100%;
         height: 100%;
-        
+        margin-top: 3rem;
+
     }
     .banner-video-tutorial{
         width: 50%;
@@ -248,7 +303,8 @@ main{
         margin-top: 6rem; 
         padding: 0.6rem;
     }
-    .banner-video-tutorial,.banner-workout-video h3{
+    .banner-video-tutorial,
+    .banner-workout-video h3{
         font-size: 1rem;
     }
     .banner-video-tutorial p{
@@ -261,19 +317,52 @@ main{
     .habit-section{
         padding: 0 5rem;
     }
-    .habit-text{
+    .text-decoration{
         padding-top: 1rem;
     }
-    .habit-text h3{
+    .text-decoration h3,
+    .running-text-button h3{
         width: 318px;
         font-size: 2rem;
     }
-    .habit-text p{
+    .text-decoration p,
+    .running-text-button p{
         width: 316px;
         font-size: 0.875rem;
     }
-    .habit-card-container{
+    .habit-card-container
+    {
+        grid-template-columns: repeat(1,1fr);
+        width: 231px;
+ 
+    }
+    /* running styles */
+    .running-container,
+    .running-card{
+        display: grid;
         grid-template-columns: 1fr;
+    }
+    .running-container{
+        /* border: 2px solid red; */
+        width: 350px;
+        margin: 0 auto;
+        margin-top: 4rem;
+        padding: 0;
+    }
+    .running-card{
+        margin: 2rem;
+    }
+    .running-img img{
+        width: 100%;
+        height: 100%;
+        margin-top: 2rem;
+        object-fit: cover;
+    }
+    .running-text-button h3{
+        width: 287px;
+    }
+    .running-text-button p{
+        width: 287px;
     }
 
 }
