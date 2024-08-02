@@ -286,6 +286,7 @@ table{
     border-collapse: collapse;
     width: 330px;
     height: 216px;
+    cursor: pointer;
 }
 td,th{
     border: 1px solid rgba(255, 255, 255,0.5);
@@ -322,6 +323,7 @@ td{
 .input-select{
     display: flex;
     gap: 12px;
+    
 }
 .input-select 
 input,select{
@@ -335,6 +337,7 @@ input,select{
     background-color: rgba(255, 255, 255, 0.1);
     font-size: 1rem;
     font-weight: 400;
+    cursor: pointer;
 }
 .input-select select{
     width: 300px;
@@ -448,8 +451,8 @@ hr{
     }
     .btn-primary{
         width: 100%;
-        padding: 1rem 1.3rem;
-        font-size: 0.8rem;
+        padding: 1rem 0.7rem;
+        font-size: 1rem;
         
     }
     .banner-img{
@@ -478,7 +481,7 @@ hr{
     .banner-workout-video p{
         font-size: 0.1rem;
     }
- /* change habit styles */
+    /* change habit styles */
     .habit-section{
         padding: 0 5rem;
     }
@@ -504,6 +507,7 @@ hr{
     /* running styles */
     .running-container,
     .running-card,
+    .bmi-cal-inner-container,
     .footer-section,
     .footer-text{
         display: grid;
@@ -531,7 +535,56 @@ hr{
     .running-text-button p{
         width: 287px;
     }
-/* footer styles */
+    /* bmi-cal styles */
+    .bmi-cal-container{
+        margin-top: 2rem;
+    }
+    .bmi-title{
+        margin: 0 auto;
+        width: 353px;
+    }
+    .bmi-title h3{
+        font-size: 2rem;
+    }
+    .bmi-title p{
+        font-size: 0.9rem;
+        width: 353px;
+        margin-bottom: 2rem;
+    }
+    .bmi-cal-inner-container{
+        gap: 3rem;   
+    }
+    .bmi-table{
+        width: 350px;
+        margin: 0 auto;
+        margin-top: 2rem;
+    }
+    .bmi-table h3{
+        font-size: 1rem;
+        margin-bottom: 1.5rem;
+    }
+    .bmi-calculation{
+        margin-top: 0;
+        width: 350px;
+        margin: 0 auto;
+    }
+    .bmi-calculation h3{
+        font-size: 1rem;
+    }
+    .bmi-calculation p{
+        font-size: 0.9rem;
+        width: 346px;
+    }
+    .input-select input,select{
+        width: 150px;
+    }
+    .select-2 select{
+        width: 100%;
+    }
+    .bmi-calculation .btn-primary{
+        width: 60%;
+    }
+    /* footer styles */
     .footer-section{
         padding: 2.7rem 0 3.5rem;
     }
