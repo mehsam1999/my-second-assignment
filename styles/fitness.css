@@ -110,6 +110,7 @@ main{
 .banner-img{
     width: 349px;
     height: 580px;
+    object-fit: cover;
 }
 .banner-img img{
     width: 100%;
@@ -343,6 +344,9 @@ input,select{
     height: 50px;
     border-right: 16px solid transparent;
 }
+.input-select option{
+    border-color: rgba(255, 255, 255, 0.1);
+}
 .select-2 select{
     width: 577px;
     height: 50px;
@@ -391,6 +395,7 @@ input,select{
     height: 272px;
     filter: brightness(80%);
     border-radius: 1rem;
+    object-fit: cover;
 }
 .trainer-card{
     position: relative;
@@ -409,6 +414,112 @@ input,select{
     color: rgba(255, 255, 255, 0.5);
     font-size: 0.9rem;
 }
+
+/* payment styles */
+.payment-text{
+    width: 671px;
+    margin: 0 auto;
+}
+.payment-text h3{
+    margin-top: 5.5rem;
+    font-size: 3rem;
+    font-weight: 900;
+    color: white;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.payment-text p{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 4rem; 
+}
+.payment-details{
+    width: 1060px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+}
+.payment-card{
+    width: 350px;
+    background-color:rgba(255, 255, 255, 0.1);
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1), 0 6px 20px rgba(0, 0, 0, 0.19);
+    transition: box-shadow 0.3s ease;
+}
+.payment-card:hover {
+    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2), 0 12px 24px rgba(0, 0, 0, 0.3);
+}
+
+.payment-card img{
+    width: 350px;
+    height: 252px;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+    object-fit: cover;
+}
+.text-field{
+    margin: 0 1rem;
+}
+.text-field h3{
+    margin-top: 1.5rem;
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: white;
+    margin-bottom: 0.5rem;
+}
+.text-field p{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 2rem; 
+} 
+.text-field label{
+    display: block;
+    font-size: 1.25rem;
+    gap: 1rem;
+    color: white;
+    margin-bottom: 1rem;
+}
+.text-field label input[type="radio"] {
+    margin-right: 0.5rem; 
+    transform: scale(1.25);
+}
+.payment-card hr{
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    width: 348px;
+    margin-top: 2.5rem;
+}
+.cash-button{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 1rem;
+}
+.cash-button p{
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-top: 2rem;
+    margin-bottom: 2.5rem;
+    color: white;
+}
+#title{
+    font-size: 1rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.5);
+}
+.btn-cash{
+    margin-top: 2rem;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    border: 1px solid rgb(230, 83, 60);
+    color: white;
+    font-size: 1.125rem;
+    font-weight: 400;
+    background-color: rgb(230, 83, 60);
+    margin-bottom: 2.5rem;
+}   
 /* footer styles */
 .footer-section{
     background-color:rgba(0, 0, 0, 0.901);
@@ -449,7 +560,7 @@ input,select{
     margin-bottom: 1.25rem;
     cursor: pointer;
 }
-hr{
+.footer-section hr{
     border: 2px solid rgba(255, 255, 255, 0.1);
     margin: 0 auto;
     width: 1100px;
@@ -512,9 +623,9 @@ hr{
     }
     .banner-img{
         width: 100%;
-        height: 100%;
+        height: 590px;
         margin-top: 3rem;
-
+        object-fit: cover;
     }
     .banner-video-tutorial{
         width: 50%;
@@ -565,12 +676,14 @@ hr{
     .bmi-cal-inner-container,
     .footer-section,
     .trainer-row,
+    .payment-details,
     .footer-text{
         display: grid;
         grid-template-columns: 1fr;
     }
     .running-container,
-    .trainer-container{
+    .trainer-container,
+    .payment-details{
         /* border: 2px solid red; */
         width: 350px;
         margin: 0 auto;
@@ -643,10 +756,12 @@ hr{
         width: 60%;
     }
     /* team styles */
-    .team-text{
+    .team-text,
+    .payment-text{
         width: 309px;
     }
-    .team-text h3{
+    .team-text h3,
+    .payment-text h3{
         font-size: 2rem;
         margin-top: 3rem;
     }
@@ -672,7 +787,7 @@ hr{
     .get-started{
         margin-bottom: 1.25rem;
     }
-    hr{
+    .footer-section hr{
         width: 354px;
         /* margin: 0 auto; */
         margin-bottom: 2.5rem;
